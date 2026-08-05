@@ -1,9 +1,11 @@
-@import url(https://themes.wdfiles.com/local--code/liminal-cn);
-@import url(https://github.backroomswiki.cn/Old_BHL/css/sidebar.css);
+@import url(https://github.backroomswiki.cn/Old_BHL/css/liminal-impact.css);
+
+
+
 :root {
    --logo-image: url("https://mbackrooms.wdfiles.com/local--files/start/M.png");
    --header-title: "MBR沙盒";
-   --header-subtitle: "千仞高塔，筑基于此";
+   --header-subtitle: "前仞高塔，筑基于此";
 }
 :root {
     --theme-base: "black-highlighter";
@@ -85,6 +87,13 @@
 /* 蓝莓派 标签 */
 .printuser a[href*="lanmeipai2025"]::after {
     content: "蓝莓派";
+    background: #43360b; 
+    width: auto;
+}
+
+/* sgtz 标签（暂用） */
+.printuser a[href*="sgtz"]::after {
+    content: "sgtz";
     background: #43360b; 
     width: auto;
 }
