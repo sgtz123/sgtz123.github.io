@@ -1,0 +1,93 @@
+@import url(https://themes.wdfiles.com/local--code/liminal-cn);
+@import url(https://github.backroomswiki.cn/Old_BHL/css/sidebar.css);
+:root {
+   --logo-image: url("https://mbackrooms.wdfiles.com/local--files/start/M.png");
+   --header-title: "MBR沙盒";
+   --header-subtitle: "千仞高塔，筑基于此";
+}
+:root {
+    --theme-base: "black-highlighter";
+    --body-font: Inter, Noto Sans SC, Arimo, Verdana, Geneva, sans-serif;
+    --header-font: Inter, Noto Sans SC, Franklin Gothic Medium, Franklin Gothic, ITC Franklin Gothic, Arial, sans-serif;
+    --title-font: var(--header-font);
+    --mono-font: Recursive, Noto Serif SC, Consolas, monaco, monospace;
+    --white-monochrome: 237, 233, 223;
+    --pale-gray-monochrome: 255,255,176;
+    --light-gray-monochrome: 189,183,107;
+    --gray-monochrome: 110, 98, 60;
+    --black-monochrome: 80, 59, 41;
+    --bright-accent: 142, 129, 91;
+    --medium-accent: 67, 54, 11;
+    --dark-accent: 140, 133, 113;
+    --pale-accent: 140, 133, 113;
+    --background-gradient-distance: 0rem;
+    --gradient-header: linear-gradient(to top, rgba(var(--medium-accent)) 0%, rgba(var(--medium-accent), 0.90) 100%);
+    --diagonal-stripes: linear-gradient(transparent 0);
+}
+
+/* --- 打印用户链接 基础样式优化 --- */
+.printuser a {
+    --premium-gradient: linear-gradient(135deg, #d4af37 0%, #8e815b 100%);
+    
+    color: #8e815b; 
+    
+    background: var(--premium-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* 只有在支持渐变文字的情况下才透明 */
+    -webkit-text-fill-color: transparent; 
+    
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+/* 悬停效果 */
+.printuser a:hover {
+    filter: brightness(1.2);
+    transform: translateY(-1px);
+    text-decoration: none;
+}
+
+.printuser a::after {
+    color: rgb(var(--white-monochrome)) !important; 
+    
+    /* 样式美化 */
+    font-size: 0.75em;
+    font-weight: normal;
+    padding: 2px 6px;
+    margin-left: 8px;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    vertical-align: middle;
+    text-shadow: none; /* 去掉文字投影保证清晰 */
+    -webkit-text-fill-color: initial; /* 强制取消上面的渐变文字效果，让标签文字显示 */
+}
+
+
+/* C++20 标签 */
+.printuser a[href*="frank-shi"]::after {
+    content: "C++20";
+    background: #5e548e;
+    width: auto;
+}
+
+/* 管理员 标签 */
+.printuser a[href*="iopk123451"]::after {
+    content: "管理员";
+    background: #6e623c;
+    width: 3.2em;
+}
+
+/* 蓝莓派 标签 */
+.printuser a[href*="lanmeipai2025"]::after {
+    content: "蓝莓派";
+    background: #43360b; 
+    width: auto;
+}
+
+/* 移除头像悬停时的默认图标干扰 */
+.printuser.avatarhover a:first-of-type:after { display: none; }
