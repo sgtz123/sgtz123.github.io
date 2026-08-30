@@ -1,0 +1,26 @@
+@import url(https://github.backroomswiki.cn/Old_BHL/css/liminal-impact.css);
+
+:root {
+   --logo-image: url("https://mbackrooms.wdfiles.com/local--files/start/M.png");
+   --header-title: "The Backrooms-M";
+   --header-subtitle: "你何曾来过这里";
+}
+:root {
+    --theme-base: "black-highlighter";
+    --body-font: Inter, Noto Sans SC, Arimo, Verdana, Geneva, sans-serif;
+    --header-font: Inter, Noto Sans SC, Franklin Gothic Medium, Franklin Gothic, ITC Franklin Gothic, Arial, sans-serif;
+    --title-font: var(--header-font);
+    --mono-font: Recursive, Noto Serif SC, Consolas, monaco, monospace;
+    --white-monochrome: 237, 233, 223;
+    --pale-gray-monochrome: 255,255,176;
+    --light-gray-monochrome: 189,183,107;
+    --gray-monochrome: 110, 98, 60;
+    --black-monochrome: 80, 59, 41;
+    --bright-accent: 142, 129, 91;
+    --medium-accent: 67, 54, 11;
+    --dark-accent: 140, 133, 113;
+    --pale-accent: 140, 133, 113;
+    --background-gradient-distance: 0rem;
+    --gradient-header: linear-gradient(to top, rgba(var(--medium-accent)) 0%, rgba(var(--medium-accent), 0.90) 100%);
+    --diagonal-stripes: linear-gradient(transparent 0);
+}
